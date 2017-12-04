@@ -138,11 +138,11 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Tarefas\Create.cshtml" />
     <Content Include="Views\Tarefas\Delete.cshtml" />
-    <Content Include="Views\Tarefas\Details.cshtml" />
     <Content Include="Views\Tarefas\Edit.cshtml" />
     <Content Include="Views\Tarefas\Index.cshtml" />
     <Content Include="Views\Usuarios\Create.cshtml" />

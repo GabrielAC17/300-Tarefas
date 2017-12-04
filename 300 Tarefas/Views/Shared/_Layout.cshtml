@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenergia</title>
+    <title>300 Tarefas</title>
 
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
@@ -25,6 +25,11 @@
         .cabecalhoTable {
             color: #fff;
         }
+
+        .body-content {
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -34,8 +39,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <!--Nome do link, action,controller, html-->
-                        <li>@Html.ActionLink("Minhas tarefas", "Index", "Tarefas", null, new { @class = "navbar-brand" })</li>
-                        <li>@Html.ActionLink("Relatórios", "Edit", "Usuarios", null, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Minhas tarefas", "Index", "Tarefas", new { id = 0 }, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Alterar meu cadastro", "Edit", "Usuarios", null, new { @class = "navbar-brand" })</li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Bem vindo, <br />@User.Identity.Name</li>
+                        <li> </li>
                         <li>@Html.ActionLink("Sair", "Logout", "Usuarios", null, new { @class = "navbar-brand" })</li>
                     </ul>
                 </div>

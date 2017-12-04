@@ -10,14 +10,22 @@ using _300_Tarefas.Models;
 
 namespace _300_Tarefas.Controllers
 {
+    [Authorize]
     public class TarefasController : Controller
     {
         private Model1Container db = new Model1Container();
 
         // GET: Tarefas
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
-            return View(db.TarefaSet.ToList());
+            if (id == 0 || id == null)
+                return View(db.TarefaSet.Where(x => x.Usuario.Login == User.Identity.Name).ToList());
+            else if (id == 1)
+                return View(db.TarefaSet.Where(x => x.Usuario.Login == User.Identity.Name && x.Concluido == true).ToList());
+            else if (id == 2)
+                return View(db.TarefaSet.Where(x => x.Usuario.Login == User.Identity.Name && x.Concluido == false).ToList());
+            else
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         }
 
         // GET: Tarefas/Details/5
@@ -50,6 +58,7 @@ namespace _300_Tarefas.Controllers
         {
             if (ModelState.IsValid)
             {
+                tarefa.Usuario = RetornarLogado();
                 db.TarefaSet.Add(tarefa);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -113,6 +122,13 @@ namespace _300_Tarefas.Controllers
             db.TarefaSet.Remove(tarefa);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public Usuario RetornarLogado()
+        {
+            Usuario c = null;
+            c = db.UsuarioSet.Where(x => x.Login == User.Identity.Name).FirstOrDefault();
+            return c;
         }
 
         protected override void Dispose(bool disposing)

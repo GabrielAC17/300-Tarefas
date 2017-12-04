@@ -7,9 +7,11 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using _300_Tarefas.Models;
+using System.Web.Security;
 
 namespace _300_Tarefas.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         private Model1Container db = new Model1Container();
@@ -35,6 +37,7 @@ namespace _300_Tarefas.Controllers
             return View(usuario);
         }
 
+        [AllowAnonymous]
         // GET: Usuarios/Create
         public ActionResult Create()
         {
@@ -46,26 +49,23 @@ namespace _300_Tarefas.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Create([Bind(Include = "Id,Login,Senha")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
                 db.UsuarioSet.Add(usuario);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
 
             return View(usuario);
         }
 
         // GET: Usuarios/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit()
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Usuario usuario = db.UsuarioSet.Find(id);
+            Usuario usuario = RetornarLogado();
             if (usuario == null)
             {
                 return HttpNotFound();
@@ -113,6 +113,59 @@ namespace _300_Tarefas.Controllers
             db.UsuarioSet.Remove(usuario);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        // GET: Login
+        [AllowAnonymous]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [AllowAnonymous]
+        public ActionResult Login([Bind(Include = "Login,Senha")] Usuario usuario)
+        {
+            //Cria o objeto que vai guardar o possível usuario
+            Usuario c = null;
+            //Se foi enviado corretamente
+            if (usuario != null)
+            {
+                //Se login e senha forem diferente de nulos
+                if (usuario.Login != "" && usuario.Senha != "")
+                {
+                    //Procura no banco um login e senha igual e retorna o usuario
+                    c = db.UsuarioSet.Where(l => l.Login == usuario.Login && l.Senha == usuario.Senha).FirstOrDefault();
+
+                    //Se o usuario for encontrado
+                    if (c != null)
+                    {
+                        //Cria cookie de autenticação
+                        FormsAuthentication.SetAuthCookie(usuario.Login, false);
+                        
+                        return RedirectToAction("Index", "Tarefas");
+                    }
+                }
+                //Em caso de algum erro
+                TempData["Error"] = "Usuário ou senha incorretos!";
+                ModelState.AddModelError("", "Usuário ou senha incorretos!");
+                return View();
+            }
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "Usuarios");
+        }
+
+        public Usuario RetornarLogado()
+        {
+            Usuario c = null;
+            c = db.UsuarioSet.Where(x => x.Login == User.Identity.Name).FirstOrDefault();
+            return c;
         }
 
         protected override void Dispose(bool disposing)

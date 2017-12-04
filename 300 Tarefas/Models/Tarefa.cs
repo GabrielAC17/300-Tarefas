@@ -17,6 +17,7 @@ namespace _300_Tarefas.Models
     {
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Tarefa")]
         public string Nome { get; set; }
         [Display(Name = "Concluído")]
         public bool Concluido { get; set; }
