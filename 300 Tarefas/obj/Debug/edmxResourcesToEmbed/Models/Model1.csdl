@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TarefaSet" EntityType="Model1.Tarefa" />
+    <EntitySet Name="UsuarioSet" EntityType="Model1.Usuario" />
+    <AssociationSet Name="UsuarioTarefa" Association="Model1.UsuarioTarefa">
+      <End Role="Usuario" EntitySet="UsuarioSet" />
+      <End Role="Tarefa" EntitySet="TarefaSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tarefa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" />
+    <Property Name="Concluido" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Model1.UsuarioTarefa" FromRole="Tarefa" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="Senha" Type="String" Nullable="false" />
+    <NavigationProperty Name="Tarefa" Relationship="Model1.UsuarioTarefa" FromRole="Usuario" ToRole="Tarefa" />
+  </EntityType>
+  <Association Name="UsuarioTarefa">
+    <End Type="Model1.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="Model1.Tarefa" Role="Tarefa" Multiplicity="*" />
+  </Association>
+</Schema>

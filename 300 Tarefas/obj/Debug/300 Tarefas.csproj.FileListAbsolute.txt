@@ -1,0 +1,80 @@
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csc.exe
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csc.exe.config
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csc.rsp
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csi.exe
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csi.exe.config
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\csi.rsp
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.AppContext.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Console.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.IO.Compression.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Claims.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.ValueTuple.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\vbc.exe
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\vbc.exe.config
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\vbc.rsp
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\300 Tarefas.dll.config
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\300 Tarefas.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\300 Tarefas.pdb
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\EntityFramework.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\EntityFramework.SqlServer.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Helpers.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Mvc.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Razor.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.Razor.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\EntityFramework.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\EntityFramework.SqlServer.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Razor.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Webpages.Razor.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Helpers.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\System.Web.Mvc.xml
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Webpages.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\obj\Debug\300 Tarefas.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\obj\Debug\300 Tarefas.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\obj\Debug\300 Tarefas.dll
+C:\Users\Gabriel\Source\Repos\300 Tarefas\300 Tarefas\obj\Debug\300 Tarefas.pdb
