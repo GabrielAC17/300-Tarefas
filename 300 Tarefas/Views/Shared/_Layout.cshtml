@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenergia</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <style>
+        .back {
+            background-image: url('../../Imagens/fundo_web.png');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .cabecalhoTable {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!--Nome do link, action,controller, html-->
+                        <li>@Html.ActionLink("Minhas tarefas", "Index", "Tarefas", null, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Relatórios", "Edit", "Usuarios", null, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Sair", "Logout", "Usuarios", null, new { @class = "navbar-brand" })</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container body-content">
+            @RenderBody()
+
+            <footer style="text-align:center;margin-top:400px;color:#fff">
+                <hr />
+                <p>&copy; @DateTime.Now.Year - 300 Tarefas</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
